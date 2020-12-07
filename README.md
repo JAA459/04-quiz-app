@@ -6,4 +6,7 @@ https://github.com/JAA459/04-quiz-app
 ### Website
 https://jaa459.github.io/04-quiz-app/index.html
 ### Screenshots
-![alt text]()
+![alt text](https://github.com/JAA459/04-quiz-app/blob/main/startPage.png)
+![alt text](https://github.com/JAA459/04-quiz-app/blob/main/finalPage.png)
+![alt text](https://github.com/JAA459/04-quiz-app/blob/main/quizPage.png)
+
