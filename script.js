@@ -7,6 +7,7 @@ var acceptingAnswers = false;
 var score = 0;
 var questionCounter = 0;
 var availableQuestions = [];
+var sec = 60;
 
 let questions = [
     {
@@ -38,6 +39,7 @@ let questions = [
 const Bonus = 50;
 const Max_QUESTION = 3;
 
+
 function startGame () {
     questionCounter = 0;
     score = 0;
@@ -64,6 +66,7 @@ function getNewQuestion() {
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
+
 };
 
 choices.forEach(choice => {
@@ -80,7 +83,10 @@ choices.forEach(choice => {
         }
         if(classToApply == 'correct') {
             addScore(Bonus);
-        };
+        }
+        if(classToApply == 'incorrect') {
+            sec -= 15;
+        }
         selectedChoice.classList.add(classToApply);
         
         setTimeout( () => {
@@ -96,3 +102,14 @@ addScore = num => {
 }
 
 startGame();
+function timer(){
+    var timer = setInterval(function(){
+        document.getElementById('timer').innerHTML="00:"+sec;
+        sec--;
+        if (sec < 0) {
+            clearInterval(timer);
+            alert("you have run out of time!");
+            return window.location.assign("final-page.html");
+        }
+    }, 1000);}
+    timer();
