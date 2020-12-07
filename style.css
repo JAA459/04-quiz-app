@@ -37,9 +37,9 @@ body {
     font-weight: bold;
     padding: 10px 20px;
 }
-.btn:hover {
-    background-color: white;
-}
+/* .btn:hover {
+    background-color: white; */
+}s
 /* .hide {
     display: none; */
 }
@@ -54,4 +54,10 @@ body {
     border: none;
     padding: 0%;
     margin: 0%;
+}
+.correct {
+    background-color: green !important;
+}
+.incorrect {
+    background-color: red !important;
 }
