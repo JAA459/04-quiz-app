@@ -4,5 +4,5 @@ In this assignment I was given the task to create a quiz in which users would be
 ### Repository
 https://github.com/JAA459/04-quiz-app
 ### Website
-
+https://jaa459.github.io/04-quiz-app/index.html
 ### Screenshots
