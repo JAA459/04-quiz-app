@@ -48,6 +48,7 @@ function startGame () {
 
 function getNewQuestion() {
     if(availableQuestions.length == 0 || questionCounter > Max_QUESTION) {
+        localStorage.setItem("finalScore", score);
         return window.location.assign("final-page.html");
     };
     questionCounter++;

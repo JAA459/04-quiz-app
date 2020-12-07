@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Congrats!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        Hello!
+        <h1 id="finalScore">0</h1>
+        <form>
+            <input type="text" name="Initials" placeholder="Initials" id="initials">
+            <button type="submit" class="btn" id="saveScore" onclick="saveHighScore(event)"disabled
+            >Save</button>
+            <a class="btn similar" href="index.html">Play Again</a>
+            <a class="btn similar" href="start.html">Go Home</a>
+        </form>
     </div>
 </body>
+<script src="final-page.js"></script> 
 </html>
