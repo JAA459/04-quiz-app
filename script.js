@@ -70,7 +70,7 @@ function getNewQuestion() {
 };
 
 choices.forEach(choice => {
-    choice.addEventListener("click", e => {
+    choice.addEventListener("click", function(e) {
        if(!acceptingAnswers) return;
 
        acceptingAnswers = false;
